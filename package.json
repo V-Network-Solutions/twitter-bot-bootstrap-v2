@@ -4,11 +4,12 @@
     "description": "A bootstrap for a twitter bot! A project carried on by V-Network Solutions",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
-        "deploy": "now -E",
+        "add-express": "npx express-generator twitterBot -–git --view pug && cd twitterBot && npm i && cd ..",
         "contrib": "contributor",
+        "dev-setup": "npm i && npm run add-express",
         "format": "pretty-quick",
-        "precommit": "pretty-quick --staged"
+        "precommit": "pretty-quick --staged",
+        "start": "npm start"
     },
     "pre-commit": [
         "format"
