@@ -1,3 +1,7 @@
+# Ignore the Express Server created for development or rollout in project.
+# Use npm run dev-setup on new environments or before deploying to Azure
+twitterBot/
+
 # Logs
 logs
 *.log
