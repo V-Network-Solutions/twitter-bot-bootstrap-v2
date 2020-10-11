@@ -42,6 +42,7 @@ jspm_packages
 
 # Other files
 *.env
+!.sample/sample.env
 
 # testing
 /coverage
