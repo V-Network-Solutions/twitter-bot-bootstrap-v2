@@ -25,10 +25,10 @@ userStream.on('follow', reply)
 
 // This will allow the bot to run on now.sh
 const server = createServer((req, res) => {
-  res.writeHead(302, {
-    Location: `https://twitter.com/${config.twitterConfig.username}`
-  })
-  res.end()
+    res.writeHead(302, {
+        Location: `https://twitter.com/${config.twitterConfig.username}`
+    })
+    res.end()
 })
 
 server.listen(3000)

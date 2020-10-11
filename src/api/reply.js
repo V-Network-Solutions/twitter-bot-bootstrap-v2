@@ -9,31 +9,31 @@ const bot = new Twit(config.twitterKeys)
 
 // function: tweets back to user who followed
 function tweetNow(text) {
-  let tweet = {
-    status: text
-  }
-
-  bot.post('statuses/update', tweet, (err, data, response) => {
-    if (err) {
-      console.lol('ERRORDERP Reply', err)
+    let tweet = {
+        status: text
     }
-    console.lol('SUCCESS: Replied: ', text)
-  })
+
+    bot.post('statuses/update', tweet, (err, data, response) => {
+        if (err) {
+            console.lol('ERRORDERP Reply', err)
+        }
+        console.lol('SUCCESS: Replied: ', text)
+    })
 }
 
 // function: replies to user who followed
 const reply = event => {
-  // get user's twitter handler/screen name
-  let screenName = event.source.screen_name
+    // get user's twitter handler/screen name
+    let screenName = event.source.screen_name
 
-  if (screenName === config.twitterConfig.username) {
-    return
-  }
-  const response = randomReply()
+    if (screenName === config.twitterConfig.username) {
+        return
+    }
+    const response = randomReply()
 
-  const res = response.replace('${screenName}', screenName)
+    const res = response.replace('${screenName}', screenName)
 
-  tweetNow(res)
+    tweetNow(res)
 }
 
 module.exports = reply
