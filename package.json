@@ -1,6 +1,6 @@
 {
     "name": "twitter-bot-bootstrap-v2",
-    "version": "0.2.2",
+    "version": "0.3.0",
     "description": "A bootstrap for a twitter bot! A project carried on by V-Network Solutions",
     "main": "index.js",
     "scripts": {
@@ -48,7 +48,8 @@
         "url": "https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2/issues"
     },
     "homepage": "https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2#readme",
-    "contributors": [{
+    "contributors": [
+        {
             "name": "Martius",
             "email": null,
             "url": "https://github.com/martiuslim",
