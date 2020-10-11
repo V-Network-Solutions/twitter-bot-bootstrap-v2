@@ -17,6 +17,7 @@
         "coverage": true,
         "greenkeeper.json": true,
         "package-lock.json": true,
-        ".package.json": true
+        ".package.json": true,
+        "contributors.md": true
     }
 }
