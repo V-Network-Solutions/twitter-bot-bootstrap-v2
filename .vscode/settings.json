@@ -16,6 +16,7 @@
         "twitterBot": true,
         "coverage": true,
         "greenkeeper.json": true,
-        "package-lock.json": true
+        "package-lock.json": true,
+        ".package.json": true
     }
 }
