@@ -2,6 +2,7 @@ const Twit = require('twit')
 const unique = require('unique-random-array')
 const config = require('../config')
 const isReply = require('../helpers/isReply')
+const isBanned = require('../helpers/isBanned')
 
 const param = config.twitterConfig
 const queryString = unique(param.queryString.split(','))
@@ -23,30 +24,38 @@ const retweet = () => {
             if (err) {
                 console.lol('ERRORDERP: Cannot Search Tweet!, Description here: ', err)
             } else {
-                // grab random tweet ID to retweet - desired range for random number is [0..data.statuses.length-1]
-                const rando = Math.floor(Math.random() * data.statuses.length)
                 let retweetId
-
-                if (!isReply(data.statuses[rando])) {
-                    retweetId = data.statuses[rando].id_str
+                    // grab random tweet ID to retweet - desired range for random number is [0..data.statuses.length-1]
+                let rando = Math.floor(Math.random() * data.statuses.length)
+                while (isBanned(data.statuses[rando])) {
+                    rando = Math.floor(Math.random() * data.statuses.length)
                 }
 
-                bot.post(
-                    'statuses/retweet/:id', {
-                        id: retweetId
-                    },
-                    (err, response) => {
-                        if (err) {
-                            console.lol('ERRORDERP: Retweet!')
+                if (!isReply(data.statuses[rando])) {
+                    /** 
+                     * TODO: add validation check here to make sure that
+                     *  ? were aren't trying to retweet something we've already tweeted
+                     *  ? the post does not contain content we aren't interested in
+                     *  */
+                    retweetId = data.statuses[rando].id_str
+                    bot.post(
+                        'statuses/retweet/:id', {
+                            id: retweetId
+                        },
+                        (err, response) => {
+                            if (err) {
+                                console.log(`failed with err retweetId ${retweetId} `)
+                                console.lol('ERRORDERP: Retweet!')
+                            }
+                            console.lol(
+                                'SUCCESS: RT: ',
+                                data.statuses[rando].text,
+                                'RANDO ID: ',
+                                rando
+                            )
                         }
-                        console.lol(
-                            'SUCCESS: RT: ',
-                            data.statuses[rando].text,
-                            'RANDO ID: ',
-                            rando
-                        )
-                    }
-                )
+                    )
+                }
             }
         }
     )
