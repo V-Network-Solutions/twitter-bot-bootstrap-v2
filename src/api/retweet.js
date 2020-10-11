@@ -32,11 +32,6 @@ const retweet = () => {
                 }
 
                 if (!isReply(data.statuses[rando])) {
-                    /** 
-                     * TODO: add validation check here to make sure that
-                     *  ? were aren't trying to retweet something we've already tweeted
-                     *  ? the post does not contain content we aren't interested in
-                     *  */
                     retweetId = data.statuses[rando].id_str
                     bot.post(
                         'statuses/retweet/:id', {
