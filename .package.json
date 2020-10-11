@@ -1,68 +1,71 @@
 {
-  "name": "twitter-bot-bootstrap",
-  "version": "0.2.1",
-  "description": "A bootstrap for a twitter bot!",
+  "name": "twitter-bot-bootstrap-v2",
+  "version": "0.3.0",
+  "description": "A bootstrap for a twitter bot! A project carried on by V-Network Solutions",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "snyk test && node index.js",
-    "snyk-protect": "snyk protect contributor --yes",
-    "prepublish": "npm run snyk-protect",
-    "deploy": "now -E",
-    "format": "prettier es5 --no-semi --single-quote --write src/**/*.js",
-    "contrib": "contributor"
+    "add-express": "npx express-generator twitterBot -–git --view pug && cd twitterBot && npm i && cd ..",
+    "contrib": "contributor",
+    "dev-setup": "npm i && npm run new-env && npm run add-express",
+    "format": "pretty-quick",
+    "new-env": "node -e \"const path = require('path'); const srcFile = __dirname + '/.sample/.env.sample'; const envFile = __dirname+'/.env';  require('fs').copyFile(srcFile, envFile, function(err) { if (err) { console.log(err); console.log('Environment configuration file creation failed!!'); } else { console.log('Environment configuration file successfully created!') }})\"",
+    "precommit": "pretty-quick --staged",
+    "setup": "npm run dev-setup",
+    "start": "npm start"
   },
   "pre-commit": [
     "format"
   ],
   "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/unique-random-array": "^2.0.1",
     "contributor": "0.1.25",
-    "prettier": "1.7.4"
+    "copyfiles": "^2.4.0",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.0.2"
   },
   "dependencies": {
     "console.lol": "0.1.2",
-    "dotenv": "4.0.0",
-    "snyk": "1.46.0",
-    "twit": "2.2.9",
-    "unique-random-array": "1.0.0"
+    "dotenv": "6.1.0",
+    "twit": "^2.2.11",
+    "unique-random-array": "^1.0.1"
   },
   "now": {
-    "alias": "twitter-bot-bootstrap"
+    "alias": "twitter-bot-bootstrap-v2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spences10/twitter-bot-bootstrap.git"
+    "url": "git+https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2.git"
   },
   "keywords": [
     "twitter",
     "bot",
     "bootstrap"
   ],
-  "author": "Scott Spence <spences10apps@gmail.com> (https://blog.scottspence.me/)",
+  "author": "V-Network Solutions <info@vnetkc.com> (https://vnetwork.solutions/) | Scott Spence <spences10apps@gmail.com> (https://blog.scottspence.me/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spences10/twitter-bot-bootstrap/issues"
+    "url": "https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2/issues"
   },
-  "homepage": "https://github.com/spences10/twitter-bot-bootstrap#readme",
-  "snyk": true,
+  "homepage": "https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2#readme",
   "contributors": [
     {
-      "name": "Paul Abrams",
+      "name": "Martius",
       "email": null,
-      "url": "https://github.com/pabrams",
+      "url": "https://github.com/martiuslim",
       "contributions": 1,
-      "additions": 3,
-      "deletions": 3,
+      "additions": 13,
+      "deletions": 0,
       "hireable": null
     },
     {
-      "name": "Nikki L.R.",
+      "name": "Snyk bot",
       "email": null,
-      "url": "https://github.com/nikkilr88",
-      "contributions": 7,
-      "additions": 46,
-      "deletions": 33,
-      "hireable": true
+      "url": "https://github.com/snyk-bot",
+      "contributions": 1,
+      "additions": 19,
+      "deletions": 3,
+      "hireable": null
     },
     {
       "name": "Joshua Vaage",
@@ -71,15 +74,6 @@
       "contributions": 1,
       "additions": 1,
       "deletions": 0,
-      "hireable": true
-    },
-    {
-      "name": "Will Hurley",
-      "email": null,
-      "url": "https://github.com/wjhurley",
-      "contributions": 9,
-      "additions": 66,
-      "deletions": 66,
       "hireable": true
     },
     {
@@ -92,21 +86,21 @@
       "hireable": null
     },
     {
-      "name": "Martius",
+      "name": "Scott Spence",
       "email": null,
-      "url": "https://github.com/martiuslim",
-      "contributions": 1,
-      "additions": 13,
-      "deletions": 0,
-      "hireable": null
+      "url": "https://github.com/spences10",
+      "contributions": 126,
+      "additions": 18460,
+      "deletions": 13315,
+      "hireable": true
     },
     {
-      "name": "Jade Thornton",
+      "name": "Will Hurley",
       "email": null,
-      "url": "https://github.com/Raindeer44",
-      "contributions": 1,
-      "additions": 1,
-      "deletions": 2,
+      "url": "https://github.com/wjhurley",
+      "contributions": 9,
+      "additions": 66,
+      "deletions": 66,
       "hireable": true
     },
     {
@@ -119,22 +113,31 @@
       "hireable": null
     },
     {
-      "name": "Scott Spence",
+      "name": "Paul Abrams",
       "email": null,
-      "url": "https://github.com/spences10",
-      "contributions": 126,
-      "additions": 18460,
-      "deletions": 13315,
+      "url": "https://github.com/pabrams",
+      "contributions": 1,
+      "additions": 3,
+      "deletions": 3,
+      "hireable": null
+    },
+    {
+      "name": "Jade Thornton",
+      "email": null,
+      "url": "https://github.com/Raindeer44",
+      "contributions": 1,
+      "additions": 1,
+      "deletions": 2,
       "hireable": true
     },
     {
-      "name": "Snyk bot",
+      "name": "Nikki L.R.",
       "email": null,
-      "url": "https://github.com/snyk-bot",
-      "contributions": 1,
-      "additions": 19,
-      "deletions": 3,
-      "hireable": null
+      "url": "https://github.com/nikkilr88",
+      "contributions": 7,
+      "additions": 46,
+      "deletions": 33,
+      "hireable": true
     }
   ]
 }
