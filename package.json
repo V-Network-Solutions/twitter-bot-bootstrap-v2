@@ -28,7 +28,7 @@
         "unique-random-array": "^1.0.1"
     },
     "now": {
-        "alias": "twitter-bot-bootstrap-2"
+        "alias": "twitter-bot-bootstrap-v2"
     },
     "repository": {
         "type": "git",
