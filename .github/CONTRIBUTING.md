@@ -2,8 +2,8 @@
 
 ## How you can help
 
-- Solving existing [issues](https://github.com/spences10/twitter-bot-bootstrap/labels/bug).
-- Enhancing the bot adding more functionality [(see issues)](https://github.com/spences10/twitter-bot-bootstrap/labels/enhancement)
+- Solving existing [issues](https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2/labels/bug).
+- Enhancing the bot adding more functionality [(see issues)](https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2/labels/enhancement)
 - Pointing out bugs/errors.
 
 For above option(s), please create an issue so it can be addressed. New to GitHub issues? They have a pretty handy guide you can use to familiarize yourself with them.
@@ -15,7 +15,7 @@ What you will need:
 - Your _own_ Twitter [account](https://twitter.com/signup) for testing
 - API Keys for Twitter.
   - Get your Twitter API keys [here](https://apps.twitter.com/app/new).
-- [Fork](https://github.com/spences10/twitter-bot-bootstrap) the repository.
+- [Fork](https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2) the repository.
 - Add API keys to `.env` file, your `.env` file should look something like this:
 
 ```shell

@@ -82,7 +82,7 @@ In the project tree for the default c9 node application delete the example proje
 In your new Node.js c9 environment go to the terminal and enter:
 
 ```shell
-git clone https://github.com/spences10/twitter-bot-bootstrap
+git clone https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2
 ```
 
 ## Project structure
