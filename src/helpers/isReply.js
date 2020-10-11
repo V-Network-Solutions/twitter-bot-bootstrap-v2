@@ -1,9 +1,10 @@
 const isReply = tweet => {
-    const RT = /^RT/i
+    const RT = require('./strings').RT
 
     if (
         RT.test(tweet.text) ||
         tweet.is_quote_status ||
+        tweet.retweeted ||
         tweet.retweeted_status ||
         tweet.in_reply_to_status_id ||
         tweet.in_reply_to_status_id_str ||
