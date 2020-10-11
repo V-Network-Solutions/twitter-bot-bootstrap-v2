@@ -31,4 +31,7 @@ const server = createServer((req, res) => {
     res.end()
 })
 
-server.listen(3000)
+if (process.env.PORT === undefined || process.env.PORT === null)
+    process.env.PORT = 3000
+
+server.listen(process.env.PORT)
