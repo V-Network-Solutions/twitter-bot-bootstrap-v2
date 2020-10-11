@@ -20,13 +20,13 @@ retweet()
 setInterval(retweet, config.twitterConfig.retweet)
 
 // reply to new follower
-const userStream = bot.stream('user')
+const userStream = bot.stream('statuses/filter', { track: `@${config.twitterConfig.username}` });
 userStream.on('follow', reply)
 
 // This will allow the bot to run on now.sh
 const server = createServer((req, res) => {
     res.writeHead(302, {
-        Location: `https://twitter.com/${config.twitterConfig.username}`
+        Location: `https://twitter.com/@${config.twitterConfig.username}`
     })
     res.end()
 })
