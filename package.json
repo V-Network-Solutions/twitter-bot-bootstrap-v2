@@ -8,7 +8,7 @@
         "contrib": "contributor",
         "dev-setup": "npm i && npm run new-env && npm run add-express",
         "format": "pretty-quick",
-        "new-env": "node -e \"const path = require('path'); const srcFile = __dirname + '/.sample/sample.env'; const envFile = __dirname+'/.env';  require('fs').copyFile(srcFile, envFile, function(err) { if (err) { console.log(err); console.log('Environment configuration file creation failed!!'); } else { console.log('Environment configuration file successfully created!') }})\"",
+        "new-env": "node -e \"const path = require('path'); const srcFile = __dirname + '/.sample/.env.sample'; const envFile = __dirname+'/.env';  require('fs').copyFile(srcFile, envFile, function(err) { if (err) { console.log(err); console.log('Environment configuration file creation failed!!'); } else { console.log('Environment configuration file successfully created!') }})\"",
         "precommit": "pretty-quick --staged",
         "setup": "npm run dev-setup",
         "start": "npm start"
