@@ -1,6 +1,6 @@
-## Contributing
+# Contributing
 
-You can help out by:
+## How you can help
 
 - Solving existing [issues](https://github.com/spences10/twitter-bot-bootstrap/labels/bug).
 - Enhancing the bot adding more functionality [(see issues)](https://github.com/spences10/twitter-bot-bootstrap/labels/enhancement)
