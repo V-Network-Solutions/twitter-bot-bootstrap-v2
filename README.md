@@ -7,6 +7,8 @@
 <!--links-->
 [gitter-url]: https://gitter.im/awesome-twitter-bots/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
+Version: 0.3.2
+
 <details>
   <summary>Click to expand TOC</summary>
 
@@ -74,6 +76,26 @@ nvm alias default 8 # default to 8 so version persists after reboots
 `nvm` stands for Node Version Manager which comes installed by default on c9 machines :+1:
 
 ## Set up the bot
+
+````javas
+/*
+
+
+if (config.envVars.tweetLog)
+  const logger = log4js.getLogger('default.tweets')
+
+*/
+const log4js = require('log4js')
+const tweetLog = log4js.getLogger('tweets')
+tweetLog.level = config.envVars.logLevel.toUpperCase()
+tweetLog.debug('testing tweet log with bot starting debug message')
+tweetLog.info('testing tweet log with bot starting info message')
+tweetLog.error('testing tweet log with bot starting error message')
+tweetLog.fatal('testing tweet log with bot starting fatal error message')
+tweetLog.trace('testing tweet log with bot starting trace message')
+tweetLog.trace('and this little tweet went wee, wee, wee, all the way home.')
+
+````
 
 In the project tree for the default c9 node application delete the example project files of `client`, `node_modules`, `package.json`, `README.md` and `server.js`. You won't need them, but you can leave them there if you so desire.
 
