@@ -1,11 +1,4 @@
 {
-    "cSpell.words": [
-        "copyfiles",
-        "islike",
-        "miljan",
-        "precommit",
-        "rando"
-    ],
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
