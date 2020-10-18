@@ -7,7 +7,7 @@ module.exports = {
         access_token: process.env.TWITTER_ACCESS_TOKEN,
         access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
     },
-    twitterConfig: {
+    envVars: {
         queryString: process.env.QUERY_STRING,
         resultType: process.env.RESULT_TYPE,
         language: process.env.TWITTER_LANG,
@@ -16,6 +16,10 @@ module.exports = {
         like: process.env.TWITTER_LIKE_RATE * 1000 * 60,
         quote: process.env.TWITTER_QUOTE_RATE * 1000 * 60,
         searchCount: process.env.TWITTER_SEARCH_COUNT,
-        randomReply: process.env.RANDOM_REPLY
+        randomReply: process.env.RANDOM_REPLY,
+        logDir: process.env.LOG_DIR,
+        localPort: process.env.LOCAL_PORT,
+        logLevel: process.env.LOG_LEVEL,
+        tweetLog: process.env.TWEET_LOG
     }
 }
