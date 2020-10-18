@@ -50,6 +50,24 @@
     },
     "homepage": "https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2#readme",
     "contributors": [{
+            "name": null,
+            "email": null,
+            "url": "https://github.com/apps/greenkeeper",
+            "contributions": 109,
+            "additions": 120,
+            "deletions": 108,
+            "hireable": null
+        },
+        {
+            "name": "Martius",
+            "email": null,
+            "url": "https://github.com/martiuslim",
+            "contributions": 1,
+            "additions": 13,
+            "deletions": 0,
+            "hireable": null
+        },
+        {
             "name": "Imgbot",
             "email": null,
             "url": "https://github.com/ImgBotApp",
@@ -59,30 +77,12 @@
             "hireable": null
         },
         {
-            "name": "Paul Abrams",
+            "name": "Sergio Ruiz",
             "email": null,
-            "url": "https://github.com/pabrams",
-            "contributions": 1,
-            "additions": 3,
-            "deletions": 3,
-            "hireable": null
-        },
-        {
-            "name": "Joshua",
-            "email": null,
-            "url": "https://github.com/whaleen",
-            "contributions": 1,
-            "additions": 1,
-            "deletions": 0,
-            "hireable": true
-        },
-        {
-            "name": "Jade Michael Thornton",
-            "email": null,
-            "url": "https://github.com/thornjad",
-            "contributions": 1,
-            "additions": 1,
-            "deletions": 2,
+            "url": "https://github.com/serginator",
+            "contributions": 3,
+            "additions": 22,
+            "deletions": 4,
             "hireable": null
         },
         {
@@ -95,6 +95,15 @@
             "hireable": true
         },
         {
+            "name": "Jade Michael Thornton",
+            "email": null,
+            "url": "https://github.com/thornjad",
+            "contributions": 1,
+            "additions": 1,
+            "deletions": 2,
+            "hireable": null
+        },
+        {
             "name": "Millan Sanchez",
             "email": null,
             "url": "https://github.com/masdc",
@@ -104,22 +113,13 @@
             "hireable": null
         },
         {
-            "name": "Nicole Sattler",
+            "name": "Joshua",
             "email": null,
-            "url": "https://github.com/nikkilr88",
-            "contributions": 7,
-            "additions": 46,
-            "deletions": 33,
-            "hireable": true
-        },
-        {
-            "name": "Martius",
-            "email": null,
-            "url": "https://github.com/martiuslim",
+            "url": "https://github.com/whaleen",
             "contributions": 1,
-            "additions": 13,
+            "additions": 1,
             "deletions": 0,
-            "hireable": null
+            "hireable": true
         },
         {
             "name": "WhiteSource Renovate",
@@ -131,21 +131,12 @@
             "hireable": null
         },
         {
-            "name": null,
-            "email": null,
-            "url": "https://github.com/apps/greenkeeper",
-            "contributions": 109,
-            "additions": 120,
-            "deletions": 108,
-            "hireable": null
-        },
-        {
             "name": "Ryan Valizan",
             "email": null,
             "url": "https://github.com/devnetkc",
-            "contributions": 32,
-            "additions": 952,
-            "deletions": 500,
+            "contributions": 35,
+            "additions": 1375,
+            "deletions": 885,
             "hireable": true
         },
         {
@@ -158,13 +149,22 @@
             "hireable": true
         },
         {
-            "name": "Sergio Ruiz",
+            "name": "Paul Abrams",
             "email": null,
-            "url": "https://github.com/serginator",
-            "contributions": 3,
-            "additions": 22,
-            "deletions": 4,
+            "url": "https://github.com/pabrams",
+            "contributions": 1,
+            "additions": 3,
+            "deletions": 3,
             "hireable": null
+        },
+        {
+            "name": "Nicole Sattler",
+            "email": null,
+            "url": "https://github.com/nikkilr88",
+            "contributions": 7,
+            "additions": 46,
+            "deletions": 33,
+            "hireable": true
         }
     ]
 }
