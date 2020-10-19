@@ -7,7 +7,7 @@
 <!--links-->
 [gitter-url]: https://gitter.im/awesome-twitter-bots/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
-Version: 0.3.2
+Version: 0.3.3
 
 <details>
   <summary>Click to expand TOC</summary>
