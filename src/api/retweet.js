@@ -87,13 +87,9 @@ const retweet = () => {
 
 
 
-                /**
-                 * ! Be sure to remove this!
-                 */
-                logger.info('📰 RETWEETED: ' + data.statuses[rando].text)
-                    /**
-                     * ! Be sure to remove this!
-                     
+
+
+                config.envVars.tuneBot ? logger.info('📰 RETWEETED: ' + data.statuses[rando].text) :
                     bot.post(
                         'statuses/retweet/:id', {
                             id: retweetId
@@ -117,7 +113,6 @@ const retweet = () => {
                             )
                         }
                     )
-                    */
                 return
             }
             logger.info('🗑 Search Tossed, Resetting Query')

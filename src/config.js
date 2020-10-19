@@ -22,7 +22,8 @@ module.exports = {
         logLevel: process.env.LOG_LEVEL,
         tweetLog: strToBool(process.env.TWEET_LOG),
         skipCount: process.env.SKIP_COUNT,
-        traceStoreAndBind: strToBool(process.env.TRACE_storeWordAndBind)
+        traceStoreAndBind: strToBool(process.env.TRACE_storeWordAndBind),
+        tuneBot: strToBool(process.env.TUNE_BOT)
     }
 }
 
