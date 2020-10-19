@@ -58,4 +58,4 @@ logger.trace('🟢 Starting to listen on port: ' + process.env.PORT)
 server.listen(process.env.PORT)
 
 logger.trace('🛑 Shutting down log4js and then closing server ')
-server.close(log4js.shutdown())
+    //server.close(log4js.shutdown())
