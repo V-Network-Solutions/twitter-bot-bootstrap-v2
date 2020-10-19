@@ -5,7 +5,6 @@ const isReply = tweet => {
         RT.test(tweet.text) ||
         tweet.is_quote_status ||
         tweet.retweeted ||
-        tweet.retweeted_status ||
         tweet.in_reply_to_status_id ||
         tweet.in_reply_to_status_id_str ||
         tweet.in_reply_to_user_id ||
