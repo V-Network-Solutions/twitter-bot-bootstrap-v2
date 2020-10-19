@@ -36,7 +36,6 @@ const retweet = () => {
             if (err) {
                 logger.error('Search for tweets failed with message: ', err)
                 return
-                //! console.lol('ERRORDERP: Cannot Search Tweet!, Description here: ', err)
             }
             let retweetId
 
