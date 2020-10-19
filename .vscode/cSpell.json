@@ -10,7 +10,8 @@
         "LOGDIR",
         "miljan",
         "precommit",
-        "rando"
+        "rando",
+        "twitterbot"
     ],
     "flagWords": []
 }
