@@ -1,170 +1,171 @@
 {
-    "name": "twitter-bot-bootstrap-v2",
-    "version": "0.3.3",
-    "description": "A bootstrap for a twitter bot! A project carried on by V-Network Solutions",
-    "main": "index.js",
-    "scripts": {
-        "add-express": "npx express-generator twitterBot -–git --view pug && cd twitterBot && npm i && cd ..",
-        "contrib": "contributor",
-        "dev-setup": "npm i && npm run new-env && npm run add-express",
-        "format": "pretty-quick",
-        "new-env": "node -e \"const path = require('path'); const srcFile = __dirname + '/.sample/.env.sample'; const envFile = __dirname+'/.env';  require('fs').copyFile(srcFile, envFile, function(err) { if (err) { console.log(err); console.log('Environment configuration file creation failed!!'); } else { console.log('Environment configuration file successfully created!') }})\"",
-        "precommit": "pretty-quick --staged",
-        "setup": "npm run dev-setup",
-        "start": "node index.js"
+  "name": "twitter-bot-bootstrap-v2",
+  "version": "0.3.3",
+  "description": "A bootstrap for a twitter bot! A project carried on by V-Network Solutions",
+  "main": "index.js",
+  "scripts": {
+    "add-express": "npx express-generator twitterBot -–git --view pug && cd twitterBot && npm i && cd ..",
+    "contrib": "contributor",
+    "dev-setup": "npm i && npm run new-env && npm run add-express",
+    "format": "pretty-quick",
+    "new-env": "node -e \"const path = require('path'); const srcFile = __dirname + '/.sample/.env.sample'; const envFile = __dirname+'/.env';  require('fs').copyFile(srcFile, envFile, function(err) { if (err) { console.log(err); console.log('Environment configuration file creation failed!!'); } else { console.log('Environment configuration file successfully created!') }})\"",
+    "precommit": "pretty-quick --staged",
+    "setup": "npm run dev-setup",
+    "start": "node index.js"
+  },
+  "pre-commit": [
+    "format"
+  ],
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/unique-random-array": "^2.0.1",
+    "contributor": "0.1.25",
+    "copyfiles": "^2.4.0",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.0.2"
+  },
+  "dependencies": {
+    "console.lol": "0.1.2",
+    "dotenv": "6.1.0",
+    "log4js": "^6.3.0",
+    "twit": "^2.2.11",
+    "unique-random-array": "^1.0.1"
+  },
+  "now": {
+    "alias": "twitter-bot-bootstrap-v2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "bootstrap"
+  ],
+  "author": "V-Network Solutions <info@vnetkc.com> (https://vnetwork.solutions/) | Scott Spence <spences10apps@gmail.com> (https://blog.scottspence.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2/issues"
+  },
+  "homepage": "https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2#readme",
+  "contributors": [
+    {
+      "name": "Will Hurley",
+      "email": null,
+      "url": "https://github.com/wjhurley",
+      "contributions": 9,
+      "additions": 66,
+      "deletions": 66,
+      "hireable": true
     },
-    "pre-commit": [
-        "format"
-    ],
-    "devDependencies": {
-        "@types/dotenv": "^8.2.0",
-        "@types/unique-random-array": "^2.0.1",
-        "contributor": "0.1.25",
-        "copyfiles": "^2.4.0",
-        "prettier": "^2.1.2",
-        "pretty-quick": "^3.0.2"
+    {
+      "name": "Joshua",
+      "email": null,
+      "url": "https://github.com/whaleen",
+      "contributions": 1,
+      "additions": 1,
+      "deletions": 0,
+      "hireable": true
     },
-    "dependencies": {
-        "console.lol": "0.1.2",
-        "dotenv": "6.1.0",
-        "log4js": "^6.3.0",
-        "twit": "^2.2.11",
-        "unique-random-array": "^1.0.1"
+    {
+      "name": "Sergio Ruiz",
+      "email": null,
+      "url": "https://github.com/serginator",
+      "contributions": 3,
+      "additions": 22,
+      "deletions": 4,
+      "hireable": null
     },
-    "now": {
-        "alias": "twitter-bot-bootstrap-v2"
+    {
+      "name": "Martius",
+      "email": null,
+      "url": "https://github.com/martiuslim",
+      "contributions": 1,
+      "additions": 13,
+      "deletions": 0,
+      "hireable": null
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2.git"
+    {
+      "name": "Millan Sanchez",
+      "email": null,
+      "url": "https://github.com/masdc",
+      "contributions": 2,
+      "additions": 5,
+      "deletions": 2,
+      "hireable": null
     },
-    "keywords": [
-        "twitter",
-        "bot",
-        "bootstrap"
-    ],
-    "author": "V-Network Solutions <info@vnetkc.com> (https://vnetwork.solutions/) | Scott Spence <spences10apps@gmail.com> (https://blog.scottspence.me/)",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2/issues"
+    {
+      "name": "Scott Spence",
+      "email": null,
+      "url": "https://github.com/spences10",
+      "contributions": 142,
+      "additions": 21090,
+      "deletions": 15635,
+      "hireable": true
     },
-    "homepage": "https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2#readme",
-    "contributors": [{
-            "name": null,
-            "email": null,
-            "url": "https://github.com/apps/greenkeeper",
-            "contributions": 109,
-            "additions": 120,
-            "deletions": 108,
-            "hireable": null
-        },
-        {
-            "name": "Martius",
-            "email": null,
-            "url": "https://github.com/martiuslim",
-            "contributions": 1,
-            "additions": 13,
-            "deletions": 0,
-            "hireable": null
-        },
-        {
-            "name": "Imgbot",
-            "email": null,
-            "url": "https://github.com/ImgBotApp",
-            "contributions": 1,
-            "additions": 0,
-            "deletions": 0,
-            "hireable": null
-        },
-        {
-            "name": "Sergio Ruiz",
-            "email": null,
-            "url": "https://github.com/serginator",
-            "contributions": 3,
-            "additions": 22,
-            "deletions": 4,
-            "hireable": null
-        },
-        {
-            "name": "Scott Spence",
-            "email": null,
-            "url": "https://github.com/spences10",
-            "contributions": 142,
-            "additions": 21090,
-            "deletions": 15635,
-            "hireable": true
-        },
-        {
-            "name": "Jade Michael Thornton",
-            "email": null,
-            "url": "https://github.com/thornjad",
-            "contributions": 1,
-            "additions": 1,
-            "deletions": 2,
-            "hireable": null
-        },
-        {
-            "name": "Millan Sanchez",
-            "email": null,
-            "url": "https://github.com/masdc",
-            "contributions": 2,
-            "additions": 5,
-            "deletions": 2,
-            "hireable": null
-        },
-        {
-            "name": "Joshua",
-            "email": null,
-            "url": "https://github.com/whaleen",
-            "contributions": 1,
-            "additions": 1,
-            "deletions": 0,
-            "hireable": true
-        },
-        {
-            "name": "WhiteSource Renovate",
-            "email": null,
-            "url": "https://github.com/renovate-bot",
-            "contributions": 9,
-            "additions": 190,
-            "deletions": 1623,
-            "hireable": null
-        },
-        {
-            "name": "Ryan Valizan",
-            "email": null,
-            "url": "https://github.com/devnetkc",
-            "contributions": 35,
-            "additions": 1375,
-            "deletions": 885,
-            "hireable": true
-        },
-        {
-            "name": "Will Hurley",
-            "email": null,
-            "url": "https://github.com/wjhurley",
-            "contributions": 9,
-            "additions": 66,
-            "deletions": 66,
-            "hireable": true
-        },
-        {
-            "name": "Paul Abrams",
-            "email": null,
-            "url": "https://github.com/pabrams",
-            "contributions": 1,
-            "additions": 3,
-            "deletions": 3,
-            "hireable": null
-        },
-        {
-            "name": "Nicole Sattler",
-            "email": null,
-            "url": "https://github.com/nikkilr88",
-            "contributions": 7,
-            "additions": 46,
-            "deletions": 33,
-            "hireable": true
-        }
-    ]
+    {
+      "name": "Paul Abrams",
+      "email": null,
+      "url": "https://github.com/pabrams",
+      "contributions": 1,
+      "additions": 3,
+      "deletions": 3,
+      "hireable": null
+    },
+    {
+      "name": "WhiteSource Renovate",
+      "email": null,
+      "url": "https://github.com/renovate-bot",
+      "contributions": 9,
+      "additions": 190,
+      "deletions": 1623,
+      "hireable": null
+    },
+    {
+      "name": "Jade Michael Thornton",
+      "email": null,
+      "url": "https://github.com/thornjad",
+      "contributions": 1,
+      "additions": 1,
+      "deletions": 2,
+      "hireable": null
+    },
+    {
+      "name": "Ryan Valizan",
+      "email": null,
+      "url": "https://github.com/devnetkc",
+      "contributions": 54,
+      "additions": 1948,
+      "deletions": 1073,
+      "hireable": true
+    },
+    {
+      "name": null,
+      "email": null,
+      "url": "https://github.com/apps/greenkeeper",
+      "contributions": 109,
+      "additions": 120,
+      "deletions": 108,
+      "hireable": null
+    },
+    {
+      "name": "Nicole Sattler",
+      "email": null,
+      "url": "https://github.com/nikkilr88",
+      "contributions": 7,
+      "additions": 46,
+      "deletions": 33,
+      "hireable": true
+    },
+    {
+      "name": "Imgbot",
+      "email": null,
+      "url": "https://github.com/ImgBotApp",
+      "contributions": 1,
+      "additions": 0,
+      "deletions": 0,
+      "hireable": null
+    }
+  ]
 }
