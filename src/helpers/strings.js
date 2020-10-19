@@ -15,6 +15,7 @@ module.exports = {
         '#twitterbot'
     ],
     blackListedWords: [
+        /^RT|^HIGHLIGHTS|^@/i, // Keep this line at the top to improve performance
         /we hate bots/i,
         /die/i
     ]
