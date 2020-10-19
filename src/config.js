@@ -20,6 +20,8 @@ module.exports = {
         logDir: process.env.LOG_DIR,
         localPort: process.env.LOCAL_PORT,
         logLevel: process.env.LOG_LEVEL,
-        tweetLog: process.env.TWEET_LOG
+        tweetLog: process.env.TWEET_LOG == "true",
+        skipCount: process.env.SKIP_COUNT,
+        traceStoreAndBind: process.env.TRACE_storeWordAndBind == "true"
     }
 }
