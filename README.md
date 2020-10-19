@@ -31,6 +31,28 @@ Version: 0.3.3
 
 </details>
 
+## A Note From V-Network Solutions
+
+This is a revived Twitter bot bootstrap project.  New features are being added and capabilities to make getting going with your own Twitter bot much easier.
+
+This is an early access snapshot, as the bot is functioning; however, the documentation on how to use it is not complete. This is the best we can do for now.  The the remaining portion of this readme for addional instructions to get you going.
+
+# How to Get Going
+
+## Clone/Open in VS Code
+- Open the `Command Palette`
+- Type `Task Run` then `setup`
+
+## NPM
+- In the CLI run `npm run dev-setup`
+
+## After Setup Completes
+- Fill out your generated .env config file and add your config options to `src/config.js`
+- Start testing your bot and reviewing logs
+- Leave issues and comments on [repo here](https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2/issues/new)
+
+---
+
 This is a bootstrap for setting up a simple Twitter bot with Node.js using the npm `twit` module. The bot will retweet what you specify when configuring it. It will also reply to followers with a selection of canned responses.
 
 As a primer for this, there is a great post by [@amanhimself](https://twitter.com/amanhimself) on making your own twitter bot, check it out in the **Links** section. This is an expansion on that with further detail on configuration and deployment with `now` from Zeit.
