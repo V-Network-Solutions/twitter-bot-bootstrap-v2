@@ -1,11 +1,13 @@
 # Twitter bot bootstrap
 
+<!--
+This is not enabled anymore
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](http://opensource.org/licenses/MIT)
-[![Chat](https://badges.gitter.im/awesome-twitter-bots/Lobby.svg)][gitter-url]
-
+-->
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2/blob/main/LICENSE)
+[![Discord](https://img.shields.io/discord/767897352215592982?color=ff6633&label=Discord)][discord-url]
 <!--links-->
-[gitter-url]: https://gitter.im/awesome-twitter-bots/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[discord-url]: https://vnetkc.com/discord
 
 Version: 0.3.3
 
@@ -15,6 +17,11 @@ Version: 0.3.3
 <!-- TOC -->
 
 - [Twitter bot bootstrap](#twitter-bot-bootstrap)
+  - [A Note From V-Network Solutions](#a-note-from-v-network-solutions)
+    - [How to Get Going](#how-to-get-going)
+      - [Clone/Open in VS Code](#cloneopen-in-vs-code)
+  - [NPM](#npm)
+  - [After Setup Completes](#after-setup-completes)
   - [What you'll need](#what-youll-need)
   - [Setup twitter](#setup-twitter)
   - [Setup development environment](#setup-development-environment)
@@ -35,18 +42,21 @@ Version: 0.3.3
 
 This is a revived Twitter bot bootstrap project.  New features are being added and capabilities to make getting going with your own Twitter bot much easier.
 
-This is an early access snapshot, as the bot is functioning; however, the documentation on how to use it is not complete. This is the best we can do for now.  The the remaining portion of this readme for addional instructions to get you going.
+This is an early access snapshot, as the bot is functioning; however, the documentation on how to use it is not complete. This is the best we can do for now.  The the remaining portion of this readme for additional instructions to get you going.
 
-# How to Get Going
+### How to Get Going
 
-## Clone/Open in VS Code
+#### Clone/Open in VS Code
+
 - Open the `Command Palette`
 - Type `Task Run` then `setup`
 
 ## NPM
+
 - In the CLI run `npm run dev-setup`
 
 ## After Setup Completes
+
 - Fill out your generated .env config file and add your config options to `src/config.js`
 - Start testing your bot and reviewing logs
 - Leave issues and comments on [repo here](https://github.com/V-Network-Solutions/twitter-bot-bootstrap-v2/issues/new)
@@ -63,7 +73,9 @@ Before starting the clock you'll need to set up some accounts if you don't have 
 
 - Twitter account
 - Development environment with Node.js and npm
-- [Zeit account](https://zeit.co/login)
+- A web server capable of running Node.js apps such as:
+  - [Azure account](https://vnetkc.com/azuresignup)
+  - [Zeit account](https://zeit.co/login)
 
 ## Setup twitter
 
@@ -73,17 +85,19 @@ As an example, I'll configure the old [@DroidScott](twitter.com/droidscott) twit
 
 Straight forward enough for the twitter application, make sure you add your phone number to your Twitter account before clicking the **Create your Twitter application** button.
 
-![](/images/twitter-application-setup.png)
+![twitter-application-setup](/images/twitter-application-setup.png)
 
 You should now be in the 'Application Management' section where you will need to take note of your keys. You should have your 'Consumer Key (API Key)' and 'Consumer Secret (API Secret)' already available. You'll need to scroll to the bottom of the page and click the **Create my access token** to get the 'Access Token' and 'Access Token Secret' take note of all four of them as you'll need them when setting up the bot.
 
 ## Setup development environment
 
-If you don't already have a dev environment with node installed then for a quick-start I'd suggest using [Cloud9](https://c9.io/) you can be up and running in minutes with one of the pre made Node.js environments.
+If you don't already have a dev environment with node installed then for a
+quick-start I'd suggest using [Cloud9](https://c9.io/) you can be up and running
+in minutes with one of the pre made Node.js environments.
 
 Note that in some regions you will be prompted to enter credit card information to use Cloud9 you will not be charged, there are other options to use like [Glitch](https://glitch.com) if you don't have a credit card. For this guide I'm going to be using Cloud9 which is what will be in the images.
 
-![](/images/c9-node-env.png)
+![images/c9-node-env](/images/c9-node-env.png)
 
 ## Node 8
 
@@ -121,7 +135,7 @@ tweetLog.trace('and this little tweet went wee, wee, wee, all the way home.')
 
 In the project tree for the default c9 node application delete the example project files of `client`, `node_modules`, `package.json`, `README.md` and `server.js`. You won't need them, but you can leave them there if you so desire.
 
-![](/images/delete-c9-starter.gif)
+![delete-c9-starter.gif](/images/delete-c9-starter.gif)
 
 In your new Node.js c9 environment go to the terminal and enter:
 
@@ -158,7 +172,7 @@ twitter-bot-bootstrap/
 
 ## Node dependencies
 
-Before configuring the bot we'll need to install the dependencies, cd into the project folder with `cd tw*` in the terminal this will move you to `:~/workspace/twitter-bot-bootstrap (master) $ ` from the terminal enter:
+Before configuring the bot we'll need to install the dependencies, cd into the project folder with `cd tw*` in the terminal this will move you to `:~/workspace/twitter-bot-bootstrap (master) $` from the terminal enter:
 
 ```shell
 npm install
@@ -205,7 +219,7 @@ Now you'll need to add your Twitter keys to the `.env` file. Just input the keys
 
 The file structure should look as follows:
 
-```
+````env
 TWITTER_CONSUMER_KEY=
 TWITTER_CONSUMER_SECRET=
 TWITTER_ACCESS_TOKEN=
@@ -226,7 +240,7 @@ Note that `RANDOM_REPLY` is split with a pipe `|` and the `QUERY_STRING` is spli
 
 If you can not find the `.env` file in the file structure of your c9 project then you will need to enable the **`Show Hidden Files`** option. In the file view select the settings cog then tick the `Show Hidden Files` option if it is not already checked.
 
-![](/images/c9-hidden-files-check.gif)
+![c9-hidden-files-check.gif](/images/c9-hidden-files-check.gif)
 
 Add your API keys to the `.env` file :key:
 
@@ -255,15 +269,15 @@ TWITTER_RETWEET_RATE=120
 TWITTER_SEARCH_COUNT=20
 ```
 
-![](/images/clone-and-install.gif)
+![clone-and-install-img](/images/clone-and-install.gif)
 
 That should be it. Go to the terminal, enter `npm start` and you should get some output:
 
-![](/images/bot-output.png)
+![bot-output-image](/images/bot-output.png)
 
 Check the Twitter account:
 
-![](/images/twitter-account.png)
+![twitter-account-img](/images/twitter-account.png)
 
 You now have a tweet bot, if you want to have this deployed so it's not just running from your machine or from the c9 machine [which is against their terms of service] then we can go over that next.
 
@@ -277,7 +291,7 @@ npm i -g now
 
 Then `now` from the terminal and you will be prompted to enter your email, you will be sent a confirmation email, click the link and you're ready to go!
 
-![](/images/now-setup-deploy.gif)
+![now-setup-deploy.gif](/images/now-setup-deploy.gif)
 
 If you take a look at the `package.json` file in the `"scripts"` section you see there is one for `"deploy"` this is the command to deploy the bot to `now`, so from the terminal:
 
@@ -290,6 +304,7 @@ This will use all our environment variables we defined within our `.env` file fo
 You will get terminal output with a URL for where your bot is located, click the link and you can watch it get built.
 
 ## Handy tip
+
 If you want to add this to your own GitHub repo and don't want to share your API keys :key: with the world then you should turn off tracking on the `.env` file. From the terminal enter this git command:
 
 ```shell
