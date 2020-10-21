@@ -1,3 +1,9 @@
+/**
+ * log4jConfig module.
+ * @desc This module exports the log4j configuration options for the project
+ * @module helpers/log4jConfig
+ * @requires module:helpers/config
+ */
 const config = require('./config')
 
 module.exports = {
