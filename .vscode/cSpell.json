@@ -6,6 +6,7 @@
         "appenders",
         "copyfiles",
         "islike",
+        "jsdocs",
         "LOCALPORT",
         "LOGDIR",
         "miljan",
