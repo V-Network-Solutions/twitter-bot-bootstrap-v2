@@ -2,27 +2,32 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "contribute",
+      "label": "Update Contributors",
       "command": "npm run contrib",
       "type": "shell"
     },
     {
-      "label": "format",
+      "label": "Fix Line Formatting",
       "command": "npm run format",
       "type": "shell"
     },
     {
-      "label": "install",
+      "label": "Generate Docs",
+      "command": "npm run gen-docs",
+      "type": "shell"
+    },
+    {
+      "label": "Install Dependencies",
       "command": "npm i",
       "type": "shell"
     },
     {
-      "label": "setup",
+      "label": "Setup Dev Enviornment",
       "command": "npm run dev-setup",
       "type": "shell"
     },
     {
-      "label": "start",
+      "label": "Start Bot",
       "command": "npm run format && npm start",
       "type": "shell",
       "group": {
