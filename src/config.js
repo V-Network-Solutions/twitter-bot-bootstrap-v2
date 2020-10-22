@@ -1,3 +1,9 @@
+/**
+ * config module.
+ * @desc This module exports the environment configuration options for the project
+ * @module config
+ * @requires dotenv
+ */
 require('dotenv').config()
 
 module.exports = {
