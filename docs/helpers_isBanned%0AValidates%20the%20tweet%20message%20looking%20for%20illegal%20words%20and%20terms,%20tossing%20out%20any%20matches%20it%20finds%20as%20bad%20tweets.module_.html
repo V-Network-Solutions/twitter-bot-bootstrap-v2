@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Module: helpers/isBanned
+Validates the tweet message looking for illegal words and terms, tossing out any matches it finds as bad tweets.</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Module: helpers/isBanned
+Validates the tweet message looking for illegal words and terms, tossing out any matches it finds as bad tweets.</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="helpers_isBanned.js.html">helpers/isBanned.js</a>, <a href="helpers_isBanned.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+        <h3 class="subsection-title">Requires</h3>
+
+        <ul>
+            <li><a href="module-config.html">module:config</a></li>
+        
+            <li>module:log4js</li>
+        
+            <li><a href="module-log4jConfig.html">module:log4jConfig</a></li>
+        </ul>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="~storeWordAndBind"><span class="type-signature">(inner) </span>storeWordAndBind<span class="signature">(text, badWord)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+    
+
+    
+    <p class="summary">Takes a tweet message and an illegal or banned retweet term and then looks to see if there is a match.</p>
+    
+
+
+
+<div class="description">
+    <p>Takes a tweet message and an illegal or banned retweet term and then looks to see if there is a match.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The tweet message to be evaluated</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>badWord</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The RegEx string to look for in the tweet.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="helpers_isBanned.js.html">helpers/isBanned.js</a>, <a href="helpers_isBanned.js.html#line43">line 43</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>If the word is bad it returns true, otherwise returns false.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="helpers_isBanned%250AValidates%2520the%2520tweet%2520message%2520looking%2520for%2520illegal%2520words%2520and%2520terms,%2520tossing%2520out%2520any%2520matches%2520it%2520finds%2520as%2520bad%2520tweets.module_.html">helpers/isBanned
+Validates the tweet message looking for illegal words and terms, tossing out any matches it finds as bad tweets.</a></li><li><a href="module-config.html">config</a></li><li><a href="module-helpers_rando.html">helpers/rando</a></li><li><a href="module-log4jConfig.html">log4jConfig</a></li></ul><h3>Global</h3><ul><li><a href="global.html#isReply">isReply</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Wed Oct 21 2020 20:40:13 GMT-0500 (Central Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
